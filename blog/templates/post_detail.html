@@ -7,4 +7,10 @@
     <h2>{{ PostDetail.title }}</h2>
     <p>{{ PostDetail.body }}</p>
     </div>
+
+    <p>
+        <a href="{% url 'edit_post' PostDetail.pk %}">Edit post</a>
+        <a href="{% url 'delete_post' PostDetail.pk %}">Delete post</a>
+    </p>
+
 {% endblock content %}
